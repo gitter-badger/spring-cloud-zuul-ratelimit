@@ -1,0 +1,8 @@
+zuul.ratelimit:
+  enabled: true
+  repository: REDIS
+  policies:
+    local:
+      limit: 3
+      refresh-interval: 60
+      type: origin
